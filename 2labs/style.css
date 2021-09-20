@@ -1,0 +1,88 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a {
+    margin: 0;
+    font-weight: normal;
+}
+
+body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+header {
+    margin: auto;
+    width: 100%;
+    background-color: #b57d289f;
+    height: 120;
+    display: flex;
+    border-radius: 25px;
+}
+
+footer {
+    width: 100%;
+    background-color: #b57d289f;
+    padding: 10px;
+    height: 120;
+    display: flex;
+    border-radius: 25px;
+}
+
+#logo {
+    float: left;
+    margin: auto;
+    margin-left: 460px;
+    width: 100px;
+    height: 100px;
+}
+
+.name-box {
+    margin: auto;
+    padding-right: 55%;
+}
+
+.table,
+.navigation,
+.list,
+.form {
+    max-width: 960px;
+    background-color: #b57d289f;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.navigation-list {
+    width: 100%;
+}
+
+.navigation-list,
+.li {
+    font-size: 20px;
+    padding: 0 80px;
+    list-style-type: none;
+    display: flex;
+}
+
+.even-number {
+    background-color: pink;
+}
+
+.odd-number {
+    background-color: silver;
+}
+
+.footer-author {
+    margin: auto;
+    font-size: 24px;
+}

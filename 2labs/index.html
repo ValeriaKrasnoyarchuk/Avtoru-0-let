@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Задание первое </title>
+</head>
+<body>
+
+    <header class="header">
+        <img src="images/logo.jpg" id="logo" alt="logo">
+        <div class="name-box">
+            <h1> Практика Валерии Красноярчук </h1>
+        </div>
+    </header>
+    <main class="main">
+        <nav class="navigation">
+            <h3> Навигация </h3>
+            <ul class="navigation-list">
+                <li class="li">
+                    <a href="http://127.0.0.1:5500/index.html">Главная</a>
+                </li>
+                <li class="li">
+                    <a href="https://127.0.0.1:5500/index.html">Ссылка в https</a>
+                </li>
+                <li class="li">
+                    <a href="https://www.kubsu.ru/ru/node/874">Спонсор</a>
+                </li>
+            </ul>
+        </nav>
+
+    
+    <div class="list">
+        <h1> Гиперссылки </h1>
+    <li><a href="http://example.com/"target="_blanc"> Абсолютная ссылка на сайт example.com</a></li>
+    <li><a href="https://example.com"target="_blanc"> Aбсолютная на главную сайта example.com в протоколе https</a></li>
+    <li><a href="ftp://example.com/file.zip"target="_blanc"> Ссылка на файл на сервере FTP без авторизации</a></li>
+    <li><a href="ftp://user:password@example.com"target="_blanc"> Ссылка на файл на сервере FTP с авторизацией</a></li>
+    <li><a href="https://example#fragment"target="_blanc"> Ссылка на фрагмент страницы некоторого сайта</a></li>
+    
+    <li><a href="#element_id"target="_blanc"> Ссылка на фрагмент текущей страницы</a></li>
+    
+    
+    <li><a href="http://example.com/page=1&perpage=20"target="_blanc"> Ссылка с двумя параметрами в URL</a></li>
+    <li><a href="#"target="_blanc"> Ссылка с пустым href</a></li>
+    <li><a href="https://example.com"target="_blanc" rel="notfollow"> Ссылка, по которой запрещен переход поисковикам</a></li>
+    <li><a href=""target="_blanc"> <noindex>Запрещенная для индексации поисковиками</noindex></a></li>
+    
+    <p>Контекстную в тексте <a href="https://www.kubsu.ru">абзаца</a> </p>
+
+    <p>
+    <a href="https://www.kubsu.ru"><img src="images/image.jpg" width="500"
+    height="500" alt="ссылка-изображение"></a>
+    </p>
+    
+    <p>
+    <object type="image/jpeg" data="images/image.jpg" width="650" height="434">
+    <map name="name"><area href="https://www.kubsu.ru" alt="circle" shape="rect" coords="50,50,100,100"></map>
+    </object>
+    </p>
+
+    <li><a href="/about"target="_blanc"> относительную на страницу в текущем каталоге</a></li>
+    <li><a href="about"target="_blanc"> относительную на страницу в каталоге about</a></li>
+    <li><a href="../news/html"target="_blanc"> относительную на страницу в каталоге уровнем выше текущего</a></li>
+    <li><a href="../../news"target="_blanc"> относительную на страницу в каталоге двумя уровнями выше</a></li>
+    <li><a href="/"target="_blanc"> сокращенную на главную</a></li>
+    <li><a href="/education"target="_blanc">Сокращенная ссылка на внутреннюю</a></li>
+</div>
+
+<div class="table">
+    <h3>Таблица</h3>
+    <table>
+        <tr>
+            <th>Столбец 1</th>
+            <th>Столбец 2</th>
+            <th>Столбец 3</th>
+        </tr>
+        <tr class="odd-number">
+            <td colspan="3">Ячейка 1 Ячейка 2 Ячейка 3</td>
+        </tr>
+        <tr class="even-number">
+            <td colspan="3">Ячейка 4 Ячейка 5 Ячейка 6</td>
+        </tr>
+        <tr class="odd-number">
+            <td colspan="3">Ячейка 7 Ячейка 8 Ячейка 9</td>
+        </tr>
+        <tr class="even-number">
+            <td colspan="3">Ячейка 10 Ячейка 11 Ячейка 12</td>
+        </tr>
+        <tr class="odd-number">
+            <td colspan="3">Ячейка 13 Ячейка 14 Ячейка 15</td>
+        </tr>
+    </table>
+</div>
+<div class="form">
+    <h1> Форма HTML</h1>
+    <form action="/" method="POST">
+
+      <label>
+        Укажите свое имя и фамилию:<br>
+        <input name="field-name-1" placeholder="Имя Фамилия">
+      </label><br>
+      <label>
+        Укажите e-mail:<br>
+        <input name="field-email" placeholder="e-mail:" type="email">
+      </label><br>
+      <label>
+        Дата рождения:<br>
+        <input name="field-date" placeholder="2021.01.01" type="date">
+      </label><br>
+  
+        Выбирете пол:<br>
+        <select name="field-name-3">
+          <option value="Значение1">Мужчина</option>
+          <option value="Значение2">Женщина</option>
+          <option value="Значение3" selected="selected">Не выбрано</option>
+        </select>
+      </label><br>
+      <label>
+       Ваши сверхспособности:
+        <br>
+        <select name="field-name-4[]" multiple="multiple">
+          <option value="Значение1">Бессмертие</option>
+          <option value="Значение2" selected="selected">прохождение сквозь стены</option>
+          <option value="Значение3" selected="selected">левитация</option>
+        </select>
+      </label><br>
+      <label>
+        Биография:<br>
+         <textarea name="field-name-2" placeholder=Текст...></textarea>
+       </label><br>
+       <label>
+        С контрактом ознакомлен (а) :<br>
+      <label><input type="radio" checked="checked" name="radio-group-1" value="Значение1">
+        Ознакомлен(а) </label>
+      <label><input type="radio" name="radio-group-1" value="Значение2">
+        Не ознакомлен(а) </label><br>
+      Согласие на обработку:<br>
+      <label><input type="checkbox" checked="checked" name="check-1">
+       Принимаю</label><br>
+      
+      <input type="submit" value="Отправить">
+    </form>
+</div>
+</main>
+
+<footer>
+    <h4 class="footer-author"> (с) Валерия Красноярчук 2021 </h4>
+</footer>
+
+</body>
+</html>
+
+
